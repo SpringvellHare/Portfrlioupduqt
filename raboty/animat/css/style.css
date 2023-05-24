@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    border:0;
+}
+.box{
+    width: 300px;
+    height: 400px;
+    background: lightblue;
+    position: relative;
+}
+.body{
+    width: 250px;
+    height: 340px;
+    background: purple;
+    top: 10px;
+    left: 25px;
+    position: absolute;
+    clip-path: polygon(0 100%, 23% 0, 38% 21%, 63% 21%, 77% 1%, 100% 100%);
+}
+.Leye{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    left: 75px;
+    border: 4px solid black;
+}
+.Reye{
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    top: 100px;
+    right: 75px;
+    border: 4px solid black;
+}
+.LIr{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    background: black;
+    top: 20px;
+    left: 20px;
+}
+.RIr{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    background: black;
+    top: 20px;
+    right: 20px;
+}
+.nose{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: pink;
+    position: absolute;
+    top: 135px;
+    left: 118px;
+    border: 3px solid black;
+}
+.smile{
+    width: 60px;
+    height: 20px;
+    border: 4px solid black;
+    border-radius: 0px 0px 60px 60px;
+    position: absolute;
+    top: 155px;
+    left: 95px;
+    border-top: 0px;
+}
+.tablet{
+    width: 100px;
+    height: 50px;
+    border: 4px solid black;
+    position: absolute;
+    top: 205px;
+    left: 76px;
+    background: peachpuff;
+    text-align: center;
+}
+.tail{
+    width: 225px;
+    height: 200px;
+    clip-path: polygon(74% 97%, 66% 47%, 87% 29%, 78% 94%);
+    background: purple;
+    position: absolute;
+    top: 157px;
+    left: 105px;
+}
+.lap1{
+    width: 50px;
+    height: 40px;
+    border-radius: 100%;
+    background: purple;
+    border: 4px solid black;
+    position: absolute;
+    top: 320px;
+    left: 100px;
+}
+.lap2{
+    width: 50px;
+    height: 40px;
+    border-radius: 100%;
+    background: purple;
+    border: 4px solid black;
+    position: absolute;
+    top: 320px;
+    right: 100px;
+}

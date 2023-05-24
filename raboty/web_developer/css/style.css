@@ -1,0 +1,243 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+border:0;
+}
+.box{
+	width: 100%;
+}
+.nav{
+	width: 100%;
+	height: 60px;
+	background: #F6F5FB;
+}
+.nav_block{
+	width: 1024px;
+	margin: 0 auto;
+	height: 60px;
+}
+.img1{
+	float: left;
+	height: 60px;
+}
+h4{
+	font-size: 16px;
+	color: #EA9B43;
+	float: left;
+	margin-top: 10px;
+}
+.nav_item{
+	float: right;
+	margin-left: 20px;
+	margin-top: 20px;
+	color: black;
+	text-decoration: none;
+}
+.languege{
+	width: 1024px;
+	height: 30px;
+	margin: 0 auto;
+}
+.img2{
+	float: right;
+	margin-top: 5px;
+}
+.img3{
+	width: 440px;
+	height: 370px;
+}
+.header{
+	width: 1024px;
+	height: 400px;
+	margin: 0 auto;
+}
+.header_text{
+	width: 540px;
+	height: 360px;
+	float: left;
+	margin-top: 20px;
+}
+.header_img{
+	width: 470px;
+	height: 360px;
+	float: right;
+	margin-top: 20px;
+}
+h1{
+	color: #135B92;
+	margin-left: 70px;
+	font-size: 46px;
+}
+.p1{
+	margin-left: 70px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.button1{
+	background: #9F5799;
+	margin-left: 70px;
+	margin-top: 20px;
+}
+.main{
+	width: 1024px;
+	min-height: 2000px;
+	margin: 0 auto;
+}
+.history{
+	width: 1024px;
+	height: 513px;
+}
+h2{
+	color: #135B92;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.img4{
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+.history_text{
+	margin-bottom: 20px;
+}
+.direction{
+	width:1024px;
+	height: 320px;
+	margin-top:30px;
+	padding-right:20px;
+	padding-left:20px;
+	border-radius:20px;
+	background:#F6F5FB;
+}
+.direction_list{
+	margin-right: 20px;
+}
+.direction_list li{
+	margin-top: 15px;
+}
+.skill{
+	width: 1024px;
+	height: 640px;
+}
+.soft_skill{
+	width: 1024px;
+	height: 230px;
+	background: #F6CF44;
+	opacity: 0.9;
+	border-radius: 35px;
+	border-top-left-radius: 15% 100%;
+	margin-top: 20px;
+	padding: 20px 10px 10px 70px;
+}
+.hard_skill{
+	width: 1024px;
+	height: 230px;
+	background:#C678BF;
+	opacity:0.9;
+	border-radius: 35px;
+	border-bottom-right-radius: 15% 100%;
+	margin-top: 20px;
+	padding: 20px 10px 10px 70px;
+}
+.ul1{
+	margin-top: 35px;
+	line-height: 25px;
+}
+.technology{
+	width: 1024px;
+	height: 900px;
+	margin-top: 30px;
+}
+.images1{
+	display:block;
+	margin: 0 auto;
+}
+.p10{
+	text-indent: 8px;
+	margin-top: 20px;
+}
+.pros_cons{
+	width: 1024px;
+	height: 500px;
+}
+.imge{
+	width: 510px;
+	height: 350px;
+	float: left;
+}
+.ne{
+	width: 510px;
+	height: 380px;
+	float: right;
+}
+.am1{
+	margin-bottom: 15px;
+	line-height: 23px;
+}
+.negam{
+	margin-bottom: 15px;
+}
+.abob{
+	line-height: 23px;
+}
+.salary{
+	width: 1024px;
+	height: 1024px;
+}
+.prospect{
+	width: 1024px;
+	height: 380px;
+}
+.imgeas{
+	width: 400px;
+	height: 300px;
+	float: left;
+}
+.sas{
+	width: 600px;
+	height: 300px;
+	float: right;
+}
+.p20{
+	margin-top: 50px;
+	line-height: 20px;
+}
+.p21{
+	line-height: 20px;
+}
+.footer{
+	width: 100%;
+	height: 70px;
+	background: #E2DCDC;
+}
+.ses{
+	text-align: center;
+	padding-top: 20px;
+}
+td{
+    border: 1px solid black;
+	width: 200px;
+	padding: 10px;
+}
+.cl{
+	margin-top: 15px;
+}
+.asd{
+	background: lightgreen;
+	text-align: center;
+}
+.asf{
+	text-align: center;
+}
+table{
+	margin: 0 auto;
+}
+.asg{
+	width: 850px;
+	height: 530px;
+	margin-left: 75px;
+}

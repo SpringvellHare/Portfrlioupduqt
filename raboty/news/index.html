@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <header>
+            <h1>BEBRENEWS</h1>
+            <h3>Я ЗНІМАЮ НАФЕК</h3>
+        </header>
+        <nav>
+            <p class="p1" >ГОЛОВНА</p>
+            <p>НОВИНИ</p>
+            <p>БЛОХИ</p>
+            <p>ТОП-РОЗМІСТІТЬ СВОЄ ЧИСЛО</p>
+            <p>ГЕНДЕР</p>
+            <p>ДІАСПОРА</p>
+            <p>СОЦІУМ</p>
+            <p>РОЗВЕГИ</p>
+            <p>ІНФЕРНО</p>
+        </nav>
+        <main>
+          <div class="main_block1">
+            <div class="main_text">
+                <p>18:00</p><p><b>Завтра на Дніпропетровщині будуть проводити заміри електроспоживання</b></p>
+                
+            </div>
+            <div class="main_text">
+                <p>18:00</p><p><b>СБУ повідомила про підозру білоруському найманцю, який воював проти України у складі ПВК «Вагнер»</b></p>
+            </div>
+            <div class="main_text">
+                <p>18:00</p><p><b>У Кривому Розі тимчасово не курсуватимуть тролейбуси по двом маршрутам</b></p>
+            </div>
+            <div class="main_text">
+                <p>18:00</p><p><b>Спортсменка з Дніпропетровщини здобула золото на етапі Світового легкоатлетичного туру</b></p>
+            </div>
+            <div class="main_text">
+                <p>18:00</p><p><b>Перший у світі патріотичний дартс створили українці. Влучні ідеї задля перемоги!</b></p>
+            </div>
+          </div>
+            <div class="main_js">
+                <div class="banner" data-height="400" data-width="100%" data-slide-speed="900" data-autoslide="5000">
+                    <div class="slider">Самое большое земле трясение в Турции</div>
+                    <div class="slider">Некоторые вулканы застыли</div>
+                    <div class="slider">Правда про газеты</div>
+                
+                    <div class="previous" data-previous-cursor="left.png"></div>
+                    <div class="next" data-next-cursor="right.png"></div>
+                
+                    <div class="links">
+                        <a href="1"></a>
+                        <a href="2"></a>
+                        <a href="3"></a>
+                    </div>
+                  </div>
+            </div>
+        </main>
+        <aside>
+            <p class="p2"><b>ЧИТАЙТЕ</b></p>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img1.png"></div>
+                <p>Запорізький оксюморон або колаборантське міністерство фінансів без фінансів</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img2.png"></div>
+                <p>Нульова толерантність до насильства: поліцейські Кривого Рогу обговорили заходи з протидії домашньому насильству</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img3.png"></div>
+                <p>Ще двох військових рф судитимуть за воєнні злочини</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img4.png"></div>
+                <p>СБУ не дала російським олігархам уникнути націоналізації своїх активів в Україні</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img5.png"></div>
+                <p>Громади Дніпропетровщини отримали 12 мобільних сонячних станцій від міжнародних партнерів</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img6.png"></div>
+                <p>В Криворізькому районі надзвичайники пояснили громадянам, що робити, якщо провалились під лід</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img7.png"></div>
+                <p>На Заході стривожені рішучістю України утримати Бахмут</p>
+            </div>
+            <div class="aside_block">
+                <div class="aside_img"><img class="img1" src="img/img8.png"></div>
+                <p>Ніч на Дніпропетровщині пройшла без обстрілів та тривог</p>
+            </div>
+        </aside>
+        <footer></footer>
+    </div>
+  <script>
+    	// Elements
+var bannerEl = document.querySelector(".banner");
+var sliderEl = document.querySelectorAll(".slider");
+var previousEl = document.querySelector(".previous");
+var nextEl = document.querySelector(".next");
+var linksEl = document.querySelector(".links");
+var imgLinks = linksEl.getElementsByTagName("a");
+
+// Data attributes
+var height = bannerEl.getAttribute("data-height");
+var width = bannerEl.getAttribute("data-width");
+var slideSpeed = bannerEl.getAttribute("data-slide-speed");
+var autoSlide = bannerEl.getAttribute("data-autoslide");
+var nextCursor = nextEl.getAttribute("data-next-cursor");
+var previousCursor = previousEl.getAttribute("data-previous-cursor");
+
+// Slider variables
+var totalImgs = imgLinks.length;
+var currentImgNumber = 1;
+var nextImgNumber = currentImgNumber + 1;
+var previousImgNumber = totalImgs;
+var randomImgNumber = 3;
+var currentImg = bannerEl.querySelector('div:nth-of-type(' + currentImgNumber + ')');
+var nextImg = bannerEl.querySelector('div:nth-of-type(' + nextImgNumber + ')');
+var previousImg = bannerEl.querySelector('div:nth-of-type(' + previousImgNumber + ')');
+var randomImg = bannerEl.querySelector('div:nth-of-type(' + randomImgNumber + ')');
+
+// Set CSS to element or elements
+function setCSS(styles, elements) {
+  if (elements.length > 1) {
+    for (var i = 0; i < elements.length; i++) {
+      Object.assign(elements[i].style, styles);
+    }
+  } else {
+    Object.assign(elements.style, styles);
+  }
+}
+
+// Set CSS before elements appear
+document.body.style.margin = '0';
+
+setCSS({
+  width: width,
+  height: height + 'px',
+  margin: '0 auto',
+  position: 'relative'
+}, bannerEl);
+
+setCSS({
+  position: 'absolute',
+  width: '50%',
+  height: height + 'px',
+  top: '0'
+}, [previousEl, nextEl]);
+
+setCSS({
+  cursor: (totalImgs <= 1) ? 'default' : previousCursor ? 'url(' + previousCursor + '), auto' : 'w-resize',
+  width: '50%',
+  left: '0'
+}, previousEl);
+
+setCSS({
+  cursor: (totalImgs <= 1) ? 'default' : nextCursor ? 'url(' + nextCursor + '), auto' : 'e-resize',
+  right: '0'
+}, nextEl);
+
+setCSS({
+  'text-align': 'center',
+  position: 'relative',
+  top: '350px',
+  left: '0', 'right': '0',
+  margin: 'auto',
+  cursor: 'default',
+  width: imgLinks.length * 30 + 'px'
+}, linksEl);
+
+// For multiple elements of same class
+// Iterate over and set individual element's CSS
+for (var i = 0; i < sliderEl.length; i++) {
+  setCSS({
+    width: width, 'height':
+    height + 'px', 'margin': '0 auto'
+  }, sliderEl[i]);
+
+  setCSS({
+    position: 'absolute',
+    opacity: '0', 'object-fit': 'cover'
+  }, sliderEl[i]);
+}
+
+for (var i = 0; i < imgLinks.length; i++) {
+  setCSS({
+    color: '#000',
+    display: 'inline-block',
+    'text-decoration': 'none',
+    background: '#FFF',
+    'border-radius': '50%',
+    height: '15px',
+    width: '15px',
+    margin: '10px 5px',
+    transition: 'all 0.5s'
+  }, imgLinks[i]);
+}
+
+(function() {
+  function fadeTo(element, speed, opacity) {
+    setCSS({
+      transition: 'opacity ' + speed + 'ms',
+      opacity: opacity
+    }, element);
+  }
+
+  function loadImg() {
+    fadeTo(currentImg, slideSpeed, 1);
+  }
+
+  function nextImgFade() {
+    fadeTo(currentImg, slideSpeed, 0);
+    fadeTo(nextImg, slideSpeed, 1);
+  }
+
+  function previousImgFade() {
+    fadeTo(currentImg, slideSpeed, 0);
+    fadeTo(previousImg, slideSpeed, 1);
+  }
+
+  function randomImgFade() {
+    fadeTo(currentImg, slideSpeed, 0);
+    fadeTo(randomImg, slideSpeed, 1);
+  }
+
+  function boldText() {
+    for (var i = 0; i < imgLinks.length; i++) {
+      var currentHref = imgLinks[i].getAttribute('href');
+      var opacity = currentImgNumber == currentHref ? 0.8 : 0.4;
+      setCSS({opacity: opacity}, imgLinks[i]);
+    }
+  }
+
+  function imgLoop() {
+    nextImgNumber = currentImgNumber + 1;
+    previousImgNumber = currentImgNumber - 1;
+
+    if (currentImgNumber == totalImgs) {
+      nextImgNumber = 1;
+    }
+
+    if (currentImgNumber == 1) {
+      previousImgNumber = totalImgs;
+    }
+  }
+
+  function refreshImgs() {
+    currentImg = bannerEl.querySelector('div:nth-of-type(' + currentImgNumber + ')');
+    nextImg = bannerEl.querySelector('div:nth-of-type(' + nextImgNumber + ')');
+    previousImg = bannerEl.querySelector('div:nth-of-type(' + previousImgNumber + ')');
+    randomImg = bannerEl.querySelector('div:nth-of-type(' + randomImgNumber + ')');
+  }
+
+  function callFunctions() {
+    boldText();
+    imgLoop();
+    refreshImgs();
+  }
+
+  function restartInterval() {
+    clearInterval(interval);
+    interval = setInterval(loopImages, autoSlide);
+  }
+
+  function loopImages() {
+    var event = document.createEvent('HTMLEvents');
+    event.initEvent('click', 1, 0);
+    nextEl.dispatchEvent(event);
+  }
+
+  // Iterate over all links
+  // On link click, restart interval, and fade in that image
+  for (var i = 0; i < imgLinks.length; i++) {
+    imgLinks[i].onclick = function() {
+      restartInterval();
+      randomImgNumber = parseInt(this.getAttribute('href'));
+      randomImg = bannerEl.querySelector('div:nth-of-type(' + randomImgNumber + ')');
+      randomImgFade();
+      currentImgNumber = randomImgNumber;
+      callFunctions();
+      return false;
+    };
+  }
+
+  // Iterate over previous and next elements
+  // On click, check direction, fade next image in and assign current image number
+  var previousAndNext = [previousEl, nextEl];
+  for (var t = 0; t < previousAndNext.length; t++) {
+    if (totalImgs > 1) {
+      previousAndNext[t].onclick = function(e) {
+        var direction = e.target.getAttribute('class');
+        if (direction == "next") {
+          nextImgFade();
+          currentImgNumber = nextImgNumber;
+        } else {
+          previousImgFade();
+          currentImgNumber = previousImgNumber;
+        }
+        restartInterval();
+        callFunctions();
+      };
+    }
+  }
+
+  boldText();
+  loadImg();
+
+  // Only set interval if there is more than 1 image
+  if (totalImgs > 1) {
+    var interval = setInterval(loopImages, autoSlide);
+  }
+})();
+  </script>
+</body>
+</html>
